@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Owen's Store</title>
+    </head>
+    <body>
+        <script src="verify.js" id="theForm"></script>
+        <h1>Owen's Store</h1>
+
+        <p>Hello! Welcome to the store. Buy some cool stuff.</p>
+        <form id="theStore" action="storeBackend.php" method="post">
+        <h2>Spaceship</h2>
+        <p>You can go to space with it, bruh. Price = $1000.00</p>
+        Quantity : <input name="spaceship" type="number" min="0" max="100">
+        <br>
+
+        <h2>Cannon</h2>
+        <p>Okay, so it IS a little violent. But dang, it is cool! Price = $300.00</p>
+        Quantity : <input name="cannon" type="number" min="0" max="100">
+        <br>
+
+        <h2>Teleporter</h2>
+        <p>Go through space. Price = $150.00</p>
+        Quantity : <input type="number" name="teleporter" min="0" max="100">
+        <br>
+
+        <h2>Train</h2>
+        <p>Require tracks. Trains are underrated. Price = $50.00</p>
+        Quantity : <input type="number" name="train" min="0" max="100">
+        <br>
+
+        <h2>House</h2>
+        <p>You can live in it. Neat. Too expensive. Price = $30000.00</p>
+        Quantity : <input type="number" name="house" min="0" max="100"><br><br>
+
+        <b>Shipping:</b><br>
+        <input name="shipping" group="shipping" value="free" type="radio"> Free 7 Day<br>
+        <input name="shipping" group="shipping" value="overnight" type="radio"> Overnight - $50.00<br>
+        <input name="shipping" group="shipping" value="three" type="radio"> Three day -$5.00<br>
+
+        <br>
+        <br>
+        Username: <input id="email" type="text"><br>
+        Password: <input id="password" type="password"><br>
+        
+        <input type="reset">
+        </form>
+        <button onclick="verify()">Submit It</button><br>
+    </body>
+</html>
